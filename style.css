@@ -61,6 +61,9 @@ header {
 .header-image img {
     max-width: 100%;          /* Empêche l'image de déborder */
     height: auto;
+    border-radius: 50%; /* Garde la forme ronde */
+    object-fit: cover;   /* Évite que la photo ne soit déformée */
+    /* Bordure et ombre supprimées ici */
 }
 
 /* SECTION À PROPOS (CORRECTION ALIGNEMENT) */
@@ -151,6 +154,7 @@ input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; fon
 }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
 
 
 
