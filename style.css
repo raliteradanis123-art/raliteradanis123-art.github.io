@@ -43,10 +43,10 @@ nav ul li a:hover { color: var(--primary); }
 
 /* Header */
 header {
-    height: 80vh;
+    height: 90vh;
+    background: radial-gradient(circle at top right, #f1f5f9, #ffffff);
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
     padding: 0 10%;
 }
 
@@ -57,13 +57,28 @@ header {
     width: 100%;
 }
 
-.header-text h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+.header-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: -1px;
+}
+.header-text h1 span {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Texte en dégradé */
+}
 .header-image img {
-    max-width: 100%;          /* Empêche l'image de déborder */
-    height: auto;
-    border-radius: 50%; /* Garde la forme ronde */
-    object-fit: cover;   /* Évite que la photo ne soit déformée */
-    /* Bordure et ombre supprimées ici */
+    width: 350px;
+    height: 350px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Forme organique moderne */
+    object-fit: cover;
+    animation: morph 8s ease-in-out infinite;
+}
+@keyframes morph {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 }
 
 /* SECTION À PROPOS (CORRECTION ALIGNEMENT) */
@@ -123,14 +138,26 @@ h2::after { content: ''; width: 50px; height: 4px; background: var(--primary); p
 /* Projets */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: 0.4s ease-out;
-    border-bottom: 4px solid transparent;
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
 }
-.card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--primary); }
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15); /* Ombre colorée au survol */
+    border-color: var(--primary);
+}
+.tags {
+    background: #f1f5f9;
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
 .btn-card { margin-top: 15px; background: none; border: 1px solid var(--primary); color: var(--primary); padding: 5px 15px; cursor: pointer; border-radius: 5px; }
 
 /* Skills */
@@ -154,6 +181,7 @@ input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; fon
 }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
 
 
 
