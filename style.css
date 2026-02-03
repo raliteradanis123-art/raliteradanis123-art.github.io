@@ -58,9 +58,6 @@ header {
 .header-image img {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    border: 8px solid white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* SECTION À PROPOS (CORRECTION ALIGNEMENT) */
@@ -151,5 +148,6 @@ input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; fon
 }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
 
 
