@@ -59,8 +59,8 @@ header {
 
 .header-text h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
 .header-image img {
-    width: 300px;
-    height: 300px;
+    max-width: 100%;          /* Empêche l'image de déborder */
+    height: auto;
 }
 
 /* SECTION À PROPOS (CORRECTION ALIGNEMENT) */
@@ -151,6 +151,7 @@ input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; fon
 }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
 
 
 
