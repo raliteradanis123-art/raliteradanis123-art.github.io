@@ -65,18 +65,29 @@ header {
 
 /* SECTION À PROPOS (CORRECTION ALIGNEMENT) */
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    display: flex !important; /* Force l'affichage en ligne */
+    flex-direction: row;      /* Force la direction horizontale */
+    align-items: center;      /* Aligne verticalement */
+    justify-content: space-between; 
+    gap: 40px;
+    width: 100%;
 }
 
-.about-text { flex: 1; }
-.profile-pic { flex: 1; text-align: right; }
+.about-text {
+    flex: 1; /* Prend 50% ou plus */
+    text-align: left;
+}
+
+.profile-pic {
+    flex: 1; /* Prend le reste de la place */
+    display: flex;
+    justify-content: flex-end; /* Pousse l'image bien à droite */
+}
 
 .profile-pic img {
+    max-width: 350px; /* Limite la taille pour laisser de la place au texte */
     width: 100%;
-    max-width: 400px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 20px 20px 0px var(--primary); /* Effet design */
     transition: 0.4s;
@@ -126,3 +137,4 @@ input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; fon
 }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
