@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danis Ralitera | Portfolio Développeur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><span class="nom_">Danis</span> Ralitera</div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1>
+                    Je suis Danis, Développeur en devenir<br>
+                       Passionné par le web et le design !
+                </h1>
+                <a href="#projets" class="btn">Voir mes projets</a>
+            </div>
+            <div class="header-image">
+                <img src="Photo1.png" alt="Photo de Danis">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>À propos</h2>
+                <p><em>Après un parcours enrichissant en tant que service client,
+                       j’ai choisi de mettre ma rigueur et ma capacité d'apprentissage au service du développement web.</p>
+                <p>Ce portfolio illustre ma reconversion et ma maîtrise des fondamentaux Full Stack.</p>
+                <p>Mon objectif est d'intégrer une équipe dynamique en tant que développeur junior.</em></p>
+                <br>
+                <a href="CV_Ralitera_Danis.pdf" class="btn-alt">Télécharger mon CV</a>
+            </div>
+            <div class="profile-pic">
+                <img src="Photo2.jpeg" alt="Photo de Danis">
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Suite de Fibonacci</h3>
+                <p>Calcul automatique en temps réel.</p>
+                <span class="tags">#html #css #js</span>
+                <button onclick="alert('Lien vers le projet !')">Voir</button>
+            </div>
+            <div class="card">
+                <h3>Analyse de nombres</h3>
+                <p>Pair, impair ou premier.</p>
+                <span class="tags">#html #css #js</span>
+                <button onclick="alert('Lien vers le projet !')">Voir</button>
+            </div>
+            <div class="card">
+                <h3>Prêt hypothécaire</h3>
+                <p>Calculateur financier précis.</p>
+                <span class="tags">#html #css #js</span>
+                <button onclick="alert('Lien vers le projet !')">Voir</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Mes Compétences</h2>
+        <div class="skills-container">
+            <div class="skill-block">
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li>HTML / CSS / JS
+                        <div class="progress-bar"><div class="progress html"></div></div>
+                    </li>
+                    <li>VS Code
+                        <div class="progress-bar"><div class="progress vscode"></div></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Gestion de projet
+                        <div class="progress-bar"><div class="progress gestion"></div></div>
+                    </li>
+                    <li>Résolution de problèmes
+                        <div class="progress-bar"><div class="progress resolution"></div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm" action="mailto:raliteradanis123@gmail.com" method="post">
+            <input type="text" placeholder="Votre prénom" required>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="text" placeholder="Votre sujet" required>
+            <textarea placeholder="Votre message" rows="5"></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+   </section>
+
+    <footer>
+        <p>Designed by Danis with HTML CSS JS - 2025</p>
+    </footer>
+</body>
+</html>
