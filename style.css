@@ -106,8 +106,8 @@ header {
 }
 
 .profile-pic img {
-    width: 250%;          /* Empêche l'image de déborder */
-    height: 250%;
+    max-width: 100%;          /* Empêche l'image de déborder */
+    height: auto;
     border-radius: 20px;
     box-shadow: 20px 20px 0px var(--primary); /* L'effet que vous vouliez */
     object-fit: cover;        /* Garde de bonnes proportions */
@@ -181,6 +181,7 @@ input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; fon
 }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
 
 
 
