@@ -25,7 +25,7 @@
             <div class="header-text">
                 <h1>
                     Je suis Danis, Développeur en devenir<br>
-                       Passionné par le web et le design !
+                    <span>Passionné par le web et le design !</span>
                 </h1>
                 <a href="#projets" class="btn">Voir mes projets</a>
             </div>
@@ -40,11 +40,11 @@
             <div class="about-text">
                 <h2>À propos</h2>
                 <p><em>Après un parcours enrichissant en tant que service client,
-                       j’ai choisi de mettre ma rigueur et ma capacité d'apprentissage au service du développement web.</p>
+                j’ai choisi de mettre ma rigueur et ma capacité d'apprentissage au service du développement web.</em></p>
                 <p>Ce portfolio illustre ma reconversion et ma maîtrise des fondamentaux Full Stack.</p>
-                <p>Mon objectif est d'intégrer une équipe dynamique en tant que développeur junior.</em></p>
+                <p>Mon objectif est d'intégrer une équipe dynamique en tant que développeur junior.</p>
                 <br>
-                <a href="CV_Ralitera_Danis.pdf" class="btn-alt">Télécharger mon CV</a>
+                <a href="CV_Ralitera_Danis.pdf" class="btn-alt"><i class="fas fa-download"></i> Télécharger mon CV</a>
             </div>
             <div class="profile-pic">
                 <img src="Photo2.jpeg" alt="Photo de Danis">
@@ -56,22 +56,22 @@
         <h2>Mes Projets</h2>
         <div class="grid">
             <div class="card">
-                <h3>Suite de Fibonacci</h3>
+                <h3><i class="fas fa-calculator"></i> Suite de Fibonacci</h3>
                 <p>Calcul automatique en temps réel.</p>
                 <span class="tags">#html #css #js</span>
-                <button onclick="alert('Lien vers le projet !')">Voir</button>
+                <button class="btn-card" onclick="alert('Lien vers le projet !')">Voir</button>
             </div>
             <div class="card">
-                <h3>Analyse de nombres</h3>
+                <h3><i class="fas fa-chart-bar"></i> Analyse de nombres</h3>
                 <p>Pair, impair ou premier.</p>
                 <span class="tags">#html #css #js</span>
-                <button onclick="alert('Lien vers le projet !')">Voir</button>
+                <button class="btn-card" onclick="alert('Lien vers le projet !')">Voir</button>
             </div>
             <div class="card">
-                <h3>Prêt hypothécaire</h3>
+                <h3><i class="fas fa-home"></i> Prêt hypothécaire</h3>
                 <p>Calculateur financier précis.</p>
                 <span class="tags">#html #css #js</span>
-                <button onclick="alert('Lien vers le projet !')">Voir</button>
+                <button class="btn-card" onclick="alert('Lien vers le projet !')">Voir</button>
             </div>
         </div>
     </section>
@@ -80,26 +80,18 @@
         <h2>Mes Compétences</h2>
         <div class="skills-container">
             <div class="skill-block">
-                <h3><i class="fas fa-code"></i> Hard Skills</h3>
+                <h3><i class="fas fa-laptop-code"></i> Hard Skills</h3>
                 <ul>
-                    <li>
-                        <div class="skill-info">
-                            <span><i class="fab fa-html5"></i> HTML / CSS / JS</span>
-                            <span>90%</span>
-                        </div>
+                    <li>HTML / CSS / JS
                         <div class="progress-bar"><div class="progress html"></div></div>
                     </li>
-                    <li>
-                        <div class="skill-info">
-                            <span><i class="fas fa-terminal"></i> VS Code & Git</span>
-                            <span>85%</span>
-                        </div>
+                    <li>VS Code
                         <div class="progress-bar"><div class="progress vscode"></div></div>
                     </li>
                 </ul>
             </div>
             <div class="skill-block">
-                <h3>Soft Skills</h3>
+                <h3><i class="fas fa-user-tie"></i> Soft Skills</h3>
                 <ul>
                     <li>Gestion de projet
                         <div class="progress-bar"><div class="progress gestion"></div></div>
@@ -114,11 +106,11 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <form id="contactForm" action="mailto:raliteradanis123@gmail.com" method="post">
+        <form id="contactForm">
             <input type="text" placeholder="Votre prénom" required>
             <input type="text" placeholder="Votre nom" required>
             <input type="text" placeholder="Votre sujet" required>
-            <textarea placeholder="Votre message" rows="5"></textarea>
+            <textarea placeholder="Votre message" rows="5" required></textarea>
             <button type="submit" class="btn">Envoyer</button>
         </form>
    </section>
@@ -126,6 +118,7 @@
     <footer>
         <p>Designed by Danis with HTML CSS JS - 2025</p>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
