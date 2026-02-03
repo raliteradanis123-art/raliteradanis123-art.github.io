@@ -64,33 +64,47 @@ header {
 }
 
 /* SECTION À PROPOS (CORRECTION ALIGNEMENT) */
+/* Section À Propos - Alignement forcé */
 .about-container {
-    display: flex !important; /* Force l'affichage en ligne */
-    flex-direction: row;      /* Force la direction horizontale */
-    align-items: center;      /* Aligne verticalement */
-    justify-content: space-between; 
-    gap: 40px;
+    display: flex;
+    flex-direction: row;      /* Force la ligne */
+    align-items: center;      /* Centre verticalement le texte et l'image */
+    justify-content: space-between;
+    gap: 40px;                /* Espace entre les deux */
     width: 100%;
+    max-width: 1100px;        /* Pour que ça ne soit pas trop large sur grand écran */
+    margin: 0 auto;           /* Centre le container lui-même */
 }
 
 .about-text {
-    flex: 1; /* Prend 50% ou plus */
+    flex: 1.5;                /* Donne un peu plus de place au texte */
     text-align: left;
 }
 
 .profile-pic {
-    flex: 1; /* Prend le reste de la place */
+    flex: 1;                  /* L'image prend un peu moins de place */
     display: flex;
-    justify-content: flex-end; /* Pousse l'image bien à droite */
+    justify-content: center;  /* Centre l'image dans son propre bloc */
 }
 
 .profile-pic img {
-    max-width: 350px; /* Limite la taille pour laisser de la place au texte */
-    width: 100%;
+    max-width: 100%;          /* Empêche l'image de déborder */
     height: auto;
     border-radius: 20px;
-    box-shadow: 20px 20px 0px var(--primary); /* Effet design */
-    transition: 0.4s;
+    box-shadow: 20px 20px 0px var(--primary); /* L'effet que vous vouliez */
+    object-fit: cover;        /* Garde de bonnes proportions */
+}
+
+/* IMPORTANT : Le mode mobile doit être en dessous */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Sur petit écran, on remet l'un sous l'autre */
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin-top: 30px;
+    }
 }
 
 .profile-pic img:hover {
@@ -137,4 +151,5 @@ input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; fon
 }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
 
